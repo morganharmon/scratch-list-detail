@@ -3,6 +3,8 @@ export function findById(id, data) {
 }
 
 export function renderAnimal(animal) {
+    const anchor = document.createElement('a');
+    anchor.href = `./animals/index.html?id=${animal.id}`;
     const div = document.createElement('div');
     div.classList.add('animal');
     const h2 = document.createElement('h2');
@@ -13,6 +15,7 @@ export function renderAnimal(animal) {
     img.src = animal.image;
     img.alt = 'animal';
 
+    anchor.append(div);
     div.append(h2, img, p);
-    return div;
+    return anchor;
 }

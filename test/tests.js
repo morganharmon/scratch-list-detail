@@ -24,7 +24,7 @@ const test = QUnit.test;
 // });
 
 test('renderAnimal returns a div containing animal properties', (expect) => {
-    const expected = `<div class="animal"><h2>Bear</h2><img src="./assets/bear.webp" alt="animal"><p>The Bear is of large size and is know for hibernation, eating fish, and rooting through trash cans</p></div>`;
+    const expected = `<a href="./animals/index.html?id=1"><div class="animal"><h2>Bear</h2><img src="./assets/bear.webp" alt="animal"><p>The Bear is of large size and is know for hibernation, eating fish, and rooting through trash cans</p></div></a>`;
     const actual = renderAnimal(findById('1', animals));
     expect.equal(actual.outerHTML, expected);
 
