@@ -13,5 +13,5 @@ export const animals = [
         id: '3',
         size: 'medium',
         image: './assets/human.webp',
-        behaviors: ['abstract reasoning', ' killing all other animals', ' and playing chess'] }
+        behaviors: ['abstract reasoning', ' killing all other animals', ' and playing board games'] }
 ];

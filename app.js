@@ -1,6 +1,5 @@
 // import functions and grab DOM elements
 import { animals } from './animaldata.js';
-import { findById } from './utils.js';
 import { renderAnimal } from './utils.js';
 
 const animalsSec = document.getElementById('animals');

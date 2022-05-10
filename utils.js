@@ -9,13 +9,13 @@ export function renderAnimal(animal) {
     div.classList.add('animal');
     const h2 = document.createElement('h2');
     h2.textContent = animal.type;
-    const p = document.createElement('p');
-    p.textContent = `The ${animal.type} is of ${animal.size} size and is know for ${animal.behaviors}`;
+    // const p = document.createElement('p');
+    // p.textContent = `The ${animal.type} is of ${animal.size} size and is know for ${animal.behaviors}`;
     const img = document.createElement('img');
     img.src = animal.image;
     img.alt = 'animal';
 
     anchor.append(div);
-    div.append(h2, img, p);
+    div.append(h2, img);
     return anchor;
 }

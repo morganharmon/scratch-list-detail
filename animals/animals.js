@@ -10,4 +10,4 @@ const animal = findById(params.get('id'), animals);
 
 animalName.textContent = animal.type;
 animalImg.src = `../assets/${animal.type}.webp`;
-animalInfo.textContent = `The ${animal.type} is of ${animal.size} size and is know for ${animal.behaviors}`;
+animalInfo.textContent = `The ${animal.type.toLowerCase()} is of ${animal.size} size and is know for ${animal.behaviors}.`;
